@@ -85,6 +85,6 @@ const getHistory = (socket, data) => {
 	socket.emit('getHistory', data);
 };
 
-server.listen(process.env.APP_PORT, () => {
-	console.log(`Aplicacion escuchando en http://localhost:${process.env.APP_PORT}`);
+server.listen(process.env.PORT, () => {
+	console.log(`Aplicacion escuchando en http://localhost:${process.env.PORT}`);
 });
